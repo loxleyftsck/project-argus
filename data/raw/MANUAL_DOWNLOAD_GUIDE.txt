@@ -1,0 +1,85 @@
+
+    ╔════════════════════════════════════════════════════════════════════╗
+    ║           MANUAL DOWNLOAD GUIDE - INDONESIAN STOCKS                ║
+    ║                    (GUARANTEED TO WORK!)                           ║
+    ╚════════════════════════════════════════════════════════════════════╝
+    
+    Since all automated APIs failed, here's the FASTEST manual method:
+    
+    ┌────────────────────────────────────────────────────────────────────┐
+    │ METHOD 1: Yahoo Finance Website (EASIEST - 2 minutes per stock)   │
+    └────────────────────────────────────────────────────────────────────┘
+    
+    1. Open: https://finance.yahoo.com/quote/BBCA.JK/history
+    
+    2. Click "Time Period" dropdown → Select "6M" (6 months)
+    
+    3. Click "Download" blue button (top right)
+    
+    4. CSV will download (BBCA.JK.csv)
+    
+    5. Rename to: BBCA_manual.csv
+    
+    6. Move to: data/raw/manual/
+    
+    7. Repeat for other stocks:
+       - GOTO.JK → https://finance.yahoo.com/quote/GOTO.JK/history
+       - BUMI.JK → https://finance.yahoo.com/quote/BUMI.JK/history
+       - BBRI.JK → https://finance.yahoo.com/quote/BBRI.JK/history
+       - TLKM.JK → https://finance.yahoo.com/quote/TLKM.JK/history
+    
+    ⏱️ Total time: ~10 minutes for 5 stocks
+    
+    ┌────────────────────────────────────────────────────────────────────┐
+    │ METHOD 2: Stooq.com (Alternative)                                  │
+    └────────────────────────────────────────────────────────────────────┘
+    
+    1. Go to: https://stooq.com/q/?s=bbca.id
+    
+    2. Click "Historical data" tab
+    
+    3. Set date range (last 6 months)
+    
+    4. Click "Download" → CSV format
+    
+    5. Save to: data/raw/manual/BBCA_stooq.csv
+    
+    Note: Stooq uses .ID suffix for Indonesian stocks
+    
+    ┌────────────────────────────────────────────────────────────────────┐
+    │ METHOD 3: IDX Official Website (Most Reliable)                     │
+    └────────────────────────────────────────────────────────────────────┘
+    
+    1. Go to: https://www.idx.co.id/en/market-data/trading-data/stock/
+    
+    2. Search stock code: BBCA
+    
+    3. Click "Historical Data"
+    
+    4. Select date range
+    
+    5. Download Excel/CSV
+    
+    6. Save to: data/raw/manual/BBCA_idx.csv
+    
+    ┌────────────────────────────────────────────────────────────────────┐
+    │ AFTER DOWNLOAD: Load Data                                          │
+    └────────────────────────────────────────────────────────────────────┘
+    
+    Run our loader script:
+    
+        python src/scripts/load_manual_csv.py
+    
+    This will:
+    - Find all CSV files in data/raw/manual/
+    - Validate format
+    - Combine into single dataset
+    - Ready for Week 1 development!
+    
+    ╔════════════════════════════════════════════════════════════════════╗
+    ║  📊 YOU ONLY NEED 2-3 STOCKS TO START!                            ║
+    ║  → GOTO.JK (pump & dump case)                                     ║
+    ║  → BUMI.JK (suspension case)                                      ║
+    ║  → BBCA.JK (normal trading baseline)                              ║
+    ╚════════════════════════════════════════════════════════════════════╝
+    
