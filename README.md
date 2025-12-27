@@ -360,12 +360,6 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 
 ---
 
-## 📞 Contact
-
-**Developer:** [Your Name]  
-**Email:** <your.email@example.com>  
-**LinkedIn:** [Your LinkedIn Profile]  
-**Portfolio:** [Your Portfolio Website]
 
 ---
 
